@@ -12,7 +12,7 @@ function LunchCheckController($scope) {
   $scope.showResults = function (){
     var userString = $scope.food.split(",");
 
-    if (!userString || userString.length == ""){
+    if (userString == ""){
       return $scope.message = " Please enter data";
     } else if (userString.length <= 3) {
       return $scope.message = "Enjoy";
