@@ -1,10 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="LunchCheck">
   <head>
     <meta charset="utf-8">
-    <title>This is a test</title>
+  <!--  <script src= "angular.min.js"></script>
+    <script src="app.js"></script>-->
+    <title>Lunch Check</title>
   </head>
   <body>
-<h1>This a test</h1>
+<h1>Lunch Check</h1>
+<div ng-controller="LunchCheckController">
+{{intructions}}
+<br>
+<input type="text" ng-model="food" required></input>
+<br>
+ <button ng-click="showResults()">Check if too much</button>
+ <br>
+  {{message}}
+  {{food}}
+
+</div>
+
   </body>
+
+  <script src= "angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.5.0/ui-bootstrap-tpls.min.js"></script>
+	<script src="app.js"></script>
 </html>
